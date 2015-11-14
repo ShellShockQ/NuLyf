@@ -1,0 +1,144 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:id="@+id/orderlayout"
+    >
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="First Name"
+        android:ems="10"
+        android:id="@+id/txtfirstname"
+        android:layout_alignParentTop="true"
+         />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtLastName"
+        android:text="Last Name"
+        android:singleLine="true"
+        android:selectAllOnFocus="false"
+        android:layout_below="@+id/txtfirstname"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress"
+        android:ems="10"
+        android:id="@+id/txtBillingAddress"
+        android:layout_below="@+id/txtLastName"
+        android:text="Billing Address" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress"
+        android:ems="10"
+        android:id="@+id/txtBillingCity"
+        android:layout_below="@+id/txtBillingAddress"
+        android:singleLine="false"
+        android:text="Billing City" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress"
+        android:ems="10"
+        android:id="@+id/txtBillingState"
+        android:layout_below="@+id/txtBillingCity"
+        android:text="State" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress"
+        android:ems="10"
+        android:id="@+id/txtBillingZip"
+        android:layout_toRightOf="@+id/txtBillingState"
+        android:text="Billing Zip"
+        android:singleLine="true"
+        android:layout_alignBottom="@+id/txtBillingState"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shipping Same As Billing"
+        android:id="@+id/chckBoxShipping"
+        android:layout_below="@+id/txtBillingState"
+ />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtShippingAddress"
+        android:layout_below="@+id/chckBoxShipping"
+        android:text="Shipping Address" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtShippingCity"
+        android:text="Shipping City"
+        android:layout_below="@+id/txtShippingAddress"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtShippingState"
+        android:text="State"
+        android:layout_below="@+id/txtShippingCity"
+    />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtShippingZip"
+        android:text="Ship Zip"
+       android:layout_alignBottom="@+id/txtShippingState"
+        android:layout_toRightOf="@+id/txtBillingState"
+       />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Price:"
+        android:id="@+id/txtviewprice"
+        android:layout_below="@+id/txtShippingState"
+ />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Tax:"
+
+        android:id="@+id/txtviewtax"
+        android:layout_below="@+id/txtviewprice"
+       />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/txtviewshipping"
+        android:text="Shipping"
+        android:layout_below="@+id/txtviewtax"
+ />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Total:"
+        android:id="@+id/txtviewtotal"
+        android:layout_below="@+id/txtviewshipping"
+ />
+    <Button
+        android:background="@drawable/btnconfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnconfirm"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/btnDone"
+        />
+
+</RelativeLayout>

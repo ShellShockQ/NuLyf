@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/healingplanrelativelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:paddingLeft="5dp" >
+
+    <TextView
+        android:id="@+id/activityHealingProgramHeader"
+        style="@style/appheading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/activityHealingProgramHeader" />
+     <TextView
+        android:id="@+id/disclaimer"
+        style="@style/disclaimer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/disclaimer"
+        android:layout_below="@+id/activityHealingProgramHeader" />
+
+    <Button
+        android:id="@+id/btnDone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:background="@drawable/btndone" />
+
+    <ScrollView
+        android:id="@+id/healingplanscrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnDone"
+        android:layout_below="@+id/disclaimer" >
+
+        <RelativeLayout
+            android:id="@+id/healingplanlinearlayoutInsideScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+</RelativeLayout>

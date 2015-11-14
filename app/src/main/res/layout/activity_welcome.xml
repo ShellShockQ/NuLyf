@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WelcomeActivity"
+    tools:ignore="MergeRootFrame" 
+    android:background="@drawable/background"
+    >
+
+    <ImageView
+        android:id="@+id/ximageView1"
+        android:layout_width="match_parent"
+        android:layout_height="265dp"
+        android:src="@drawable/temptop"
+        android:contentDescription="@string/Logo"
+        android:paddingTop="50dp"
+        android:layout_centerHorizontal="true"/>
+<TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+         >
+        <Button
+           android:id="@+id/imgbtnStore"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignBottom="@+id/imgbtnStore"
+           android:background="@drawable/btnstore"
+                   />
+     <Button
+           android:id="@+id/imgbtnFood"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignBaseline="@+id/imgbtnStore"
+           android:layout_alignBottom="@+id/imgbtnStore"
+           android:layout_toRightOf="@+id/imgbtnStore"
+           android:background="@drawable/btndiet"
+   />
+           <Button
+           android:id="@+id/imgbtnSelfImage"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentTop="true"
+           android:layout_toRightOf="@+id/imgbtnFood"
+           android:background="@drawable/btnselfimage" />
+
+       <Button
+           android:id="@+id/imgbtnAffirmation"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignBottom="@+id/imgbtnSelfImage"
+            android:layout_toRightOf="@+id/imgbtnSelfImage"
+           android:background="@drawable/btnaffirmation"
+           />
+</TableRow>
+       <Button
+           android:id="@+id/imgBtnGetAssessmentNow"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/ximageView1"
+           android:layout_centerHorizontal="true"
+           android:background="@drawable/getassessmentnow" />
+           <Button
+        android:id="@+id/imgBtnHealingPlan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/Navigation"
+        android:layout_below="@+id/ximageView1"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btnhealingprogram" 
+       android:layout_marginBottom="5dp"
+        android:visibility="gone"/>
+          <Button
+        android:id="@+id/imgBtnAssessment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/Navigation"
+        android:background="@drawable/btnassessment"
+        android:layout_below="@+id/imgBtnHealingPlan"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:visibility="gone"/>
+          
+            <Button
+        android:id="@+id/imgBtnTherapy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/Navigation"
+        android:background="@drawable/btntherapies"
+        android:layout_below="@+id/imgBtnAssessment"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:visibility="gone"/>
+      
+    
+    </RelativeLayout>

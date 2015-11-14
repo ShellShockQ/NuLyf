@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">NuLyf</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="Logo">Logo</string>
+    <string name="Navigation">Navigation</string>
+    <string name="btnNext">Next</string>
+    <string name="btnSave">Save</string>
+    <string name="btnDone">Done</string>
+    <string name="activityAssessment1Header">Assessment</string>
+    <string name="activityAssessment1SubHeader">Pick the items you\'re experiencing</string>
+    <string name="activityAssessment2Header">Assessment</string>
+    <string name="activityAssessment2SubHeader">Prioritize Your Items</string>
+    <string name="activityHealingProgramHeader">My Healing Program</string>
+    <string name="prompt_priority">Prioritize</string>
+    <string name="disclaimer">This information is shared to help you balance your natural healing energies and is not intended as diagnosis, treatment or cure for disease, nor as a substitute for medical supervision.</string>
+    <string name="dummytext">Thank you for trying the NuMe Mobile Application</string>
+    <string name="getAilmentsURL">http://nume.detrickdeburr.com/Solutions/GetAilments</string>
+    <string name="title_activity_healing_plan">HealingPlan</string>
+    <string name="menu_settings">Settings</string>
+    <string name="activityTherapiesHeader">Therapies</string>
+    <string name="reset">Reset</string>
+    <string name="help">Help</string>
+    <string name="quit">Quit</string>
+    <string name="title_activity_nu_me_dummy">Thanks for trying NuMe</string>
+    <string name="action_settings">Settings</string>
+    <string name="affirmationheader">Affirmation</string>
+    <string name="foodheader">Foods</string>
+    <string name="muskdetail">Musk is a class of aromatic substances commonly used as base notes in perfumery. They include glandular secretions from animals such as the musk deer, numerous plants emitting similar fragrances, and artificial substances with similar odors.\n\n Musk was a name originally given to a substance with a penetrating odor obtained from a gland of the male musk deer. The substance has been used as a popular perfume fixative since ancient times and is one of the more expensive animal products in the world.\n\n The name originates from the Sanskrit word for "testicle", muṣká, and has come to encompass a wide variety of aromatic substances with similar odors despite their often differing chemical structures.</string>
+
+    <string-array name="priorityvalues">
+        <item>Select</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+    <string name="title_activity_submitorder">submitorder</string>
+
+</resources>

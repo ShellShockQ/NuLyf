@@ -1,0 +1,173 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" 
+    android:paddingLeft="5dp"
+     android:background="@drawable/background">
+<TextView
+        android:id="@+id/activityTherapiesHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/activityTherapiesHeader"
+         style="@style/appheading"
+         />
+
+	 <TextView
+        android:id="@+id/CrownEnergyCenter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/activityTherapiesHeader"
+        android:layout_marginTop="29dp"
+        android:text="Crown Energy Center"
+        android:textAppearance="?android:attr/textAppearanceLarge" 
+        android:visibility="gone"
+         style="@style/appheading" />
+ <TextView
+        android:id="@+id/CrownEnergyCenterTherapies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/CrownEnergyCenter"
+        android:visibility="gone"
+         style="@style/apptext"
+        />
+        
+  
+   <TextView
+        android:id="@+id/BrowEnergyCenter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/CrownEnergyCenter"
+        android:text="Brow Energy Center"
+         android:visibility="gone"
+         style="@style/appheading"
+         />
+       
+ <TextView
+        android:id="@+id/BrowEnergyCenterTherapies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/BrowEnergyCenter"
+        android:visibility="gone"
+         style="@style/apptext"
+        />
+       
+        <TextView
+        android:id="@+id/ThroatEnergyCenter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/BrowEnergyCenterTherapies"
+        android:layout_marginTop="5dp"
+        android:text="Throat Energy Center"
+        android:visibility="gone"
+     	 style="@style/appheading"
+     	/>
+       
+        
+<TextView
+        android:id="@+id/ThroatEnergyCenterTherapies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ThroatEnergyCenter"
+        android:visibility="gone"
+         style="@style/apptext"
+            />
+ 
+    <TextView
+        android:id="@+id/HeartEnergyCenter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ThroatEnergyCenterTherapies"
+        android:layout_marginTop="5dp"
+        android:text="Heart Energy Center"
+        android:visibility="gone"
+       style="@style/appheading"
+        />
+ 
+    <TextView
+        android:id="@+id/HeartEnergyCenterTherapies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/HeartEnergyCenter"
+        android:visibility="gone"
+     style="@style/apptext"
+        />
+     <TextView
+        android:id="@+id/SolarPlexEnergyCenter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:text="Solar Plex Energy Center"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/HeartEnergyCenterTherapies"
+        android:visibility="gone"
+    	style="@style/appheading"
+        />
+     <TextView
+        android:id="@+id/SolarPlexEnergyTherapies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/SolarPlexEnergyCenter"
+        android:visibility="gone"
+         style="@style/apptext"
+        />
+    <TextView
+        android:id="@+id/NavelEnergyCenter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/SolarPlexEnergyTherapies"
+        android:layout_marginTop="5dp"
+        android:text="Navel Energy Center"
+        android:visibility="gone"
+        style="@style/appheading"
+        />
+      
+<TextView
+        android:id="@+id/NavelEnergyCenterTherapies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/NavelEnergyCenter"
+        android:visibility="gone"
+         style="@style/apptext"
+        />
+       
+    <TextView
+        android:id="@+id/RootEnergyCenter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="Root Energy Center"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/NavelEnergyCenterTherapies"
+        android:visibility="gone"
+        style="@style/appheading"
+        />
+      
+<TextView
+        android:id="@+id/RootEnergyCenterTherapies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/RootEnergyCenter"
+        android:visibility="gone"
+         style="@style/apptext"
+        />
+      
+ 
+     
+</RelativeLayout>
+</ScrollView>

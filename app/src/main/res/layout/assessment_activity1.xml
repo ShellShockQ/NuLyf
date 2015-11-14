@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:id="@+id/relative_layout_assessment_activity1"
+    android:paddingLeft="5dp"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/assessmentProgressInAssessmentActivity1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        style="@style/apptext"
+        />
+    <TextView
+        android:id="@+id/assessmentActivity1SubHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/activityAssessment1SubHeader" 
+    	android:layout_below="@+id/assessmentProgressInAssessmentActivity1"
+    	style="@style/appheading"/>
+    
+     <Button
+        android:background="@drawable/btnnext" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:id="@+id/nextBtn"
+        android:layout_alignParentBottom="true" 
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/btnNext"
+         />
+
+    <ListView android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:id="@+id/ailmentlist"
+        android:layout_above="@id/nextBtn"
+        android:layout_below="@+id/assessmentActivity1SubHeader" 
+        style="@style/apptext"
+        />
+    
+ 
+</RelativeLayout>

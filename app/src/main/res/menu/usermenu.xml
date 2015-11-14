@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <group android:id="@+id/group1">
+        <item android:id="@+id/resetoption" android:title="@string/reset"></item>
+        <item android:id="@+id/quitoption" android:title="@string/quit"></item>
+        <item android:id="@+id/helpoption" android:title="@string/help"></item>
+    </group>
+    
+
+</menu>

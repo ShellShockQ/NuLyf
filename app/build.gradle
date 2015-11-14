@@ -1,0 +1,51 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+}
+
+
+android {
+    signingConfigs {
+        release {
+            keyAlias 'NUME'
+            keyPassword '123456'
+            storeFile file('C:/Users/Detrick/AndroidStudioProjects/Nume/nume.keystore')
+            storePassword '123456'
+        }
+    }
+    compileSdkVersion 20
+    buildToolsVersion "20.0.0"
+    defaultConfig {
+        applicationId "com.nume.mobile"
+        minSdkVersion 16
+        targetSdkVersion 20
+        versionCode 51
+        versionName "1.0 Alpha Release"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+}
+
+dependencies {
+    compile files('libs/PayPalAndroidSDK-2.8.4.jar')
+    compile('com.crashlytics.sdk.android:crashlytics:2.5.2@aar') {
+        transitive = true;
+    }
+}
+
