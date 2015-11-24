@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.nume.mobile"
+    package="com.nume.android"
     android:versionCode="46"
     android:versionName="1.0" >
 
@@ -26,34 +26,34 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
 
-        <activity android:name=".WelcomeScreenActivity" >
+        <activity android:name="com.nume.android.WelcomeScreenActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".AssessmentActivity1" >
+        <activity android:name="com.nume.android.AssessmentActivity1" >
         </activity>
-        <activity android:name=".AssessmentActivity2" >
+        <activity android:name="com.nume.android.AssessmentActivity2" >
         </activity>
-        <activity android:name=".order" >
+        <activity android:name="com.nume.android.order" >
         </activity>
-        <activity android:name=".HealingPlan" >
+        <activity android:name="com.nume.android.HealingPlan" >
         </activity>
-        <activity android:name=".Therapy" >
+        <activity android:name="com.nume.android.Therapy" >
         </activity>
         <activity
-            android:name=".NuMeDummyActivity"
+            android:name="com.nume.android.NuMeDummyActivity"
             android:label="@string/title_activity_nu_me_dummy" >
         </activity>
-        <activity android:name=".vendor" >
+        <activity android:name="com.nume.android.vendor" >
         </activity>
-        <activity android:name=".VideoViewActivity" />
-        <activity android:name=".Affirmation" />
-        <activity android:name=".Food" />
+        <activity android:name="com.nume.android.VideoViewActivity" />
+        <activity android:name="com.nume.android.Affirmation" />
+        <activity android:name="com.nume.android.Food" />
         <activity
-            android:name=".submitorder"
+            android:name="com.nume.android.submitorder"
             android:label="@string/title_activity_submitorder" >
         </activity>
         <service android:name="com.paypal.android.sdk.payments.PayPalService" android:exported="false" />

@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
  <CheckedTextView 
-
-      xmlns:android="http://schemas.android.com/apk/res/android"     
+      xmlns:android="http://schemas.android.com/apk/res/android"
       android:id="@+id/checkList" 
       android:paddingLeft="20dip" 
       android:paddingRight="20dip" 
@@ -12,10 +11,9 @@
       android:layout_width="fill_parent" 
       android:layout_height="?android:attr/listPreferredItemHeight"  
       android:gravity="center_vertical"  
-      android:checkMark="?android:attr/listChoiceIndicatorMultiple" 
-      android:onClick="toggle"
-       style="@style/apptext"
-  >
+      android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+    style="@style/apptext"
+    >
 
 </CheckedTextView>
 

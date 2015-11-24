@@ -20,18 +20,18 @@ android {
         release {
             keyAlias 'NUME'
             keyPassword '123456'
-            storeFile file('C:/Users/Detrick/AndroidStudioProjects/Nume/nume.keystore')
+            storeFile file('../nume.keystore')
             storePassword '123456'
         }
     }
     compileSdkVersion 20
     buildToolsVersion "20.0.0"
     defaultConfig {
-        applicationId "com.nume.mobile"
+        applicationId "com.nume.android"
         minSdkVersion 16
         targetSdkVersion 20
-        versionCode 51
-        versionName "1.0 Alpha Release"
+        versionCode 2
+        versionName "1.0.2 Alpha Release"
     }
     buildTypes {
         release {
